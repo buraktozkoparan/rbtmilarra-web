@@ -13,7 +13,7 @@
 nav{height:84px;margin-top:32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center}.brand img{display:block;width:min(930px,82vw);height:auto}
 nav a{color:var(--muted);text-decoration:none;font-size:14px}
-.hero{min-height:calc(100vh - 84px);display:grid;align-content:center;padding:90px 0 110px}
+.hero{min-height:clamp(560px,calc(100vh - 116px),760px);display:grid;align-content:center;padding:clamp(70px,8vh,100px) 0 clamp(80px,9vh,110px)}
 .eyebrow{color:var(--accent);font-size:13px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:24px}
 h1{font-size:clamp(58px,10vw,132px);line-height:.86;letter-spacing:-.065em;margin:0;max-width:1000px}
 .lead{font-size:clamp(20px,2.4vw,30px);line-height:1.4;color:#c8d0d7;max-width:760px;margin:38px 0 0}
@@ -24,7 +24,7 @@ h2{font-size:clamp(34px,5vw,60px);letter-spacing:-.04em;margin:0}.copy{color:var
 .feature{background:var(--panel);padding:38px 32px;min-height:190px}.feature b{display:block;font-size:17px;margin-bottom:15px}.feature span{color:var(--muted);line-height:1.6}
 .status{padding:80px 0 110px;display:flex;justify-content:space-between;gap:40px;align-items:end}.status p{color:var(--muted);max-width:570px;line-height:1.7;margin:14px 0 0}
 footer{border-top:1px solid var(--line);padding:28px 0 40px;color:#727d87;font-size:13px;display:flex;justify-content:space-between}
-@media(max-width:760px){.wrap{width:min(100% - 30px,1120px)}nav{height:70px;margin-top:20px}.hero{min-height:calc(100vh - 70px);padding:70px 0}.grid{grid-template-columns:1fr;gap:30px;padding:75px 0}.features{grid-template-columns:1fr}.status{align-items:start;flex-direction:column}footer{gap:15px;flex-direction:column}}
+@media(max-width:760px){.wrap{width:min(100% - 30px,1120px)}nav{height:70px;margin-top:20px}.hero{min-height:clamp(500px,calc(100vh - 90px),680px);padding:60px 0 75px}.grid{grid-template-columns:1fr;gap:30px;padding:75px 0}.features{grid-template-columns:1fr}.status{align-items:start;flex-direction:column}footer{gap:15px;flex-direction:column}}
 </style>
 </head>
 <body>
